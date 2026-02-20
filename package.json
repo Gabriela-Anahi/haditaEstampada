@@ -1,0 +1,55 @@
+{
+    "title": "haditaEstampada",
+    "name": "haditaestampada",
+    "description": "Tienda online de stickers, parches, pins y más. ¡Dale vida a tus cosas con nuestros diseños únicos!",
+    "keywords": [
+        "stickers",
+        "parches",
+        "pins",
+        "accesorios",
+        "diseños únicos"
+    ], 
+    "version": "0.0.1",
+    "author": "Gabriela-Anahi", 
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gabriela-Anahi/haditaEstampada"
+    },
+    "homepage": "https://github.com/Gabriela-Anahi/haditaEstampada#readme",
+    "bugs": {
+        "url": "https://github.com/Gabriela-Anahi/haditaEstampada/issues"
+    },
+    "license": "MIT",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.1",
+        "@mui/icons-material": "^7.3.4",
+        "@mui/material": "^7.3.4",
+        "bcryptjs": "^3.0.2",
+        "csv-parse": "^6.1.0",
+        "dotenv": "^17.2.3",
+        "jose": "^6.1.2",
+        "firebase": "^11.6.0", 
+        "next": "^16.0.10",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.3",
+        "zustand": "^5.0.8"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3",
+        "@tailwindcss/postcss": "^4",
+        "autoprefixer": "^10.4.21",
+        "eslint": "^9",
+        "eslint-config-next": "15.5.4",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^4.1.4"
+    },
+    "type": "module"
+}
