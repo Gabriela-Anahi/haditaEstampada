@@ -1,30 +1,18 @@
 "use client";
 
 import * as React from 'react';
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import Box from '@mui/material/Box';
-import LinearProgress from '@mui/material/LinearProgress';
+import { Navbar, ProductCard } from '@/components/index';
 
 export default function Home() {
-    const router = useRouter();
-
-    useEffect(() => {
-        const token = localStorage.getItem("token");
-        
-        if (!token) {
-            router.replace("/login");
-            return;
-        }
-    }, [router]);
 
     return (
-        <Box sx={{ width: '100%',
-            position: 'fixed',
-            bottom: '0rem',
-            left: '0rem',
-        }}>
-            <LinearProgress />
+        <Box>
+            <Navbar />
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, px: 1 }}>
+                <ProductCard />
+                <ProductCard />
+            </Box>
         </Box>
     );
 }
